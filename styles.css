@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-top: 40px;
+    margin-left: 160px;
+    color: #5c4830;
+
+}
+h2{
+    margin-top: 40px;
+    margin-left: 500px;
+    color: #120b04;
+
+}
+
+.college-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.college {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 250px;
+}
+.college1{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 250px;
+}
+.college2{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 250px;
+}
+.college3{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 250px;
+}
+.college img {
+    max-width: 317px;
+    object-fit: contain;
+}
+.college1 img{
+    margin-top: 80px;
+    max-width: 300px;
+}
+.college2 img{
+    margin-top: 100px;
+    max-width: 300px;
+}
+.college3 img{
+    max-width: 250px;
+}
+.scientists-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #ddd;
+}
+
+.scientist {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 250px;
+}
+
+.scientist img {
+    max-width: 150px;
+    border-radius: 21%;
+}
+.college-container img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: brightness(1.2); 
+}
+
+.scientist img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: brightness(1.2); 
+}
+
+.scientist h3:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: brightness(1.2); 
+    color: rgb(131, 131, 203);
+}
+@media screen and (max-width: 768px) {
+    .college-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .scientists-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .college-container {
+        grid-template-columns: 1fr;
+    }
+
+    .college {
+        border-radius: 0; /* Reset rounded corners for mobile */
+    }
+
+    .scientist img {
+        max-width: 100px;
+    }
+}
+
+
+
